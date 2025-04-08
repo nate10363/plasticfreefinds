@@ -1,11 +1,7 @@
 body {
-  font-family: system-ui, sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  /* background-color: #fdfdfb; */
-  background: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
+  background-color: #f9f9f9;
 }
 
 header {
@@ -25,7 +21,6 @@ header p {
   font-size: 1.05rem;
   color: #444;
   margin-top: 0px;
-  /* margin-left: 25px; */
 }
 
 .header-title {
@@ -46,8 +41,6 @@ header p {
   width: 100%;
   justify-content: space-around;
   align-items: flex-end;
-  /* border-top: 1px solid red; */
-  /* margin-bottom: px; */
   padding-bottom: 1rem;
 }
 
@@ -65,10 +58,8 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  /* align-items: center; */
   gap: 2rem;
   padding: 2rem 1rem;
-  /* height: auto; */
 }
 
 .category {
@@ -108,7 +99,7 @@ footer {
   font-size: 0.9rem;
   color: #666;
   background: #f1f1f1;
-} 
+}  
 
 /* coffee maker css */ 
 
@@ -144,62 +135,79 @@ footer {
   font-weight: bold;
 }
 
-/* home page grid */ 
+/* home page grid */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  align-items: start;
+  gap: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 1rem;
-  background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  max-width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
-}
-
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
-  border-radius: 4px;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  height: 100%;
+  max-height: 400px;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
 }
 
-
-.card-content {
-  padding: 1rem;
+.card img {
+  display: block;
+  max-width:230px;
+  max-height:160px;
+  width: auto;
+  height: auto;
 }
-.title {
+
+.card h3 {
   font-size: 1.1rem;
-  font-weight: bold;
   margin: 0 0 0.5rem;
+  color: #333;
 }
-.description {
+
+.card p {
   font-size: 0.9rem;
-  color: #555;
-  margin-bottom: 0.5rem;
+  color: #666;
+  margin: 0 0 0.75rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
-.price {
+
+.card .price {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-.rating {
-  color: #f5a623;
+
+.card .rating {
+  color: #f39c12;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
 }
-.card-content > * {
-  margin-bottom: 0.4rem;
+
+.card a {
+  align-self: flex-start;
+  background-color: #007b5e;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
 }
-.card-content > *:last-child {
-  margin-bottom: 0;
+
+.card a:hover {
+  background-color: #005f47;
 }
