@@ -2,15 +2,18 @@ body {
   font-family: system-ui, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fdfdfb;
+  /* background-color: #fdfdfb; */
+  background: #f4f4f4;
   color: #333;
   line-height: 1.6;
 }
 
 header {
-  text-align: center;
-  padding: 3rem 1rem 2rem;
+  padding: 0rem 0rem 0rem;
   background-color: #e6f4ea;
+  height: auto;
+  margin: 0;
+  width: 100vw;
 }
 
 header h1 {
@@ -19,16 +22,53 @@ header h1 {
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   color: #444;
+  margin-top: 0px;
+  /* margin-left: 25px; */
+}
+
+.header-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  width: 30vw;
+  max-width: 150px;
+  margin: 0px;
+  
+}
+
+.category-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-end;
+  /* border-top: 1px solid red; */
+  /* margin-bottom: px; */
+  padding-bottom: 1rem;
+}
+
+.category-bar a {
+  text-decoration: none;
+  color: rgb(0, 33, 94);
+} 
+
+.flex-row {
+  display: flex;
 }
 
 main {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  /* align-items: center; */
   gap: 2rem;
   padding: 2rem 1rem;
+  /* height: auto; */
 }
 
 .category {
@@ -104,3 +144,62 @@ footer {
   font-weight: bold;
 }
 
+/* home page grid */ 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+.card-content {
+  padding: 1rem;
+}
+.title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem;
+}
+.description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+.price {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.rating {
+  color: #f5a623;
+}
+.card-content > * {
+  margin-bottom: 0.4rem;
+}
+.card-content > *:last-child {
+  margin-bottom: 0;
+}
