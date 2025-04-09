@@ -164,10 +164,11 @@ footer {
 
 .card img {
   display: block;
-  max-width:230px;
-  max-height:160px;
-  width: auto;
-  height: auto;
+  /* max-width:230px; */
+  height: 100%;
+  width: 100%;
+  /* height: auto; */
+  margin-left: 100px;
 }
 
 .card h3 {
