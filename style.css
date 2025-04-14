@@ -224,3 +224,13 @@ footer {
 .card a:hover {
   background-color: #005f47;
 }
+
+.a-img {
+  height: 200px;
+  background-color: red;
+  margin: auto;
+} 
+
+.category-subtitle {
+  margin: 0;
+}
