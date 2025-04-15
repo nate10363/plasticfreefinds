@@ -24,7 +24,7 @@ header h1 {
   margin: 0;
   font-size: 2.5rem;
   text-decoration: none;
-  color: rgb(3, 0, 97);
+  color: black;
 } 
 
 header a {
@@ -35,6 +35,7 @@ header p {
   font-size: 1.05rem;
   color: #444;
   margin-top: 0px;
+  cursor: default;
 }
 
 .header-title {
