@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -115,15 +120,15 @@ footer {
 
 /* coffee maker css */ 
 
-.product {
+/* .product {
   border: 1px solid #eee;
   padding: 1rem;
   border-radius: 10px;
   /* margin-bottom: 2rem; */
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  /* background: #fff; */
+  /* box-shadow: 0 2px 8px rgba(0,0,0,0.03);
   max-width: 320px;
-}
+} */ 
 
 .product img {
   display: block;
@@ -179,3 +184,22 @@ footer {
   margin: 0;
   color: red;
 } */
+
+
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.product {
+  flex: 1 1 280px;
+  max-width: 320px;
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  box-sizing: border-box;
+}

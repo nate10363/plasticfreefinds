@@ -10,62 +10,135 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P5KWCMM1B"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-  
     gtag('config', 'G-4P5KWCMM1B');
   </script>
 </head>
+
 <body>
   <header>
     <div class="flex-row">
       <div>
-        <img src="/Users/nathanieldavenport/Documents/plasticfreefinds/assets/logo-transparent.png" class="logo" alt="Free From Plastic Logo">
+        <a href="index.html"><img src="assets/logo-transparent.png" class="logo" alt="Free From Plastic Logo"></a>
       </div>
       <div class="header-title">
-        <h1>Plastic Free Finds</h1>
+        <a href="index.html"><h1>Plastic Free Finds</h1></a>
         <p>Your curated guide to stylish, sustainable, plastic-free living.</p>
       </div>
     </div>
 
-    <section>
-      <div class="category-bar">
-        <a href="coffee-makers.html">Kitchen</a>
-        <a href="coffee-makers.html">Clothes</a>
-        <a href="coffee-makers.html">Baby Products</a>
-        <a href="coffee-makers.html">Home & Living</a>
-        <!-- <a href="coffee-makers.html">Home Goods</a> -->
-      </div>
-    </section>
+    <nav class="category-bar" role="navigation" aria-label="Category Navigation">
+      <a href="coffee-makers.html">Kitchen</a>
+      <a href="coffee-makers.html">Clothes</a>
+      <a href="coffee-makers.html">Baby Products</a>
+      <a href="coffee-makers.html">Home & Living</a>
+    </nav>
   </header>
 
   <main>
+    <section aria-labelledby="featured-products">
+      <h2 id="featured-products">Our Favorite Products</h2>
 
-    <section class="categories">
-      <div class="category">
-        <h2>🌱 Kitchen</h2>
-        <ul>
-          <li><a href="#">Bamboo Utensils</a></li>
-          <li><a href="#">Glass Storage Containers</a></li>
-          <li><a href="#">Beeswax Wraps</a></li>
-          <li><a href="coffee-makers.html">Plastic-Free Coffee Makers</a></li>
-        </ul>
-      </div>
-      <div class="category">
-        <h2>🧺 Home & Living</h2>
-        <ul>
-          <li><a href="#">Organic Cotton Blankets</a></li>
-          <li><a href="#">Wool Dryer Balls</a></li>
-          <li><a href="#">Compostable Trash Bags</a></li>
-        </ul>
-      </div>
-      <div class="category">
-        <h2>🛁 Bath & Body</h2>
-        <ul>
-          <li><a href="#">Plastic-Free Deodorant</a></li>
-          <li><a href="#">Bar Shampoo</a></li>
-          <li><a href="#">Natural Loofahs</a></li>
-        </ul>
+      <div class="grid">
+
+        <!-- Product 1 -->
+        <section class="category">
+          <h2><a href="https://www.amazon.com/dp/B000P4D5HG?tag=freedfromplas-20" target="_blank">Hario V60 Ceramic Dripper</a></h2>
+          <div class="product">
+            <a href="https://www.amazon.com/dp/B000P4D5HG?tag=freedfromplas-20" target="_blank">
+              <img src="https://m.media-amazon.com/images/I/51cCw+yG9BL._AC_SY300_SX300_.jpg" class="a-img" alt="Hario V60 Ceramic Dripper" />
+            </a>
+            <h3 class="category-subtitle">
+              <a href="https://www.amazon.com/dp/B000P4D5HG?tag=freedfromplas-20" target="_blank">Hario V60 Ceramic Dripper</a>
+            </h3>
+            <p>A classic pour-over option made from ceramic. No plastic in sight. Requires filters.</p>
+            <div class="price">$26.02</div>
+            <div class="rating">★★★★★ (4.7) (11k+)</div>
+            <a class="buy-button" href="https://www.amazon.com/dp/B000P4D5HG?tag=freedfromplas-20" target="_blank">
+              Buy on Amazon →
+            </a>
+          </div>
+        </section>       
+        
+        <!-- Product 2 -->
+
+        <section class="category">
+          <h2><a href="https://amzn.to/4llaZSD" target="_blank">Pour-Over Glass Coffeemaker</a></h2>
+          <div class="product">
+            <a href="https://amzn.to/4llaZSD" class="a-img" target="_blank">
+              <img src="https://m.media-amazon.com/images/I/51rEZwQAmqL._AC_SL1009_.jpg" class="a-img" alt="Chemex Pour-Over Glass Coffeemaker - Classic Series - 8-Cup" />
+            </a>
+            <h3>
+              <a href="https://amzn.to/4llaZSD" target="_blank">Chemex Pour-Over Glass Coffeemaker</a>
+            </h3>
+            <p>Elegant glass design. No plastic, no fuss.  Requires filters.</p>
+            <div class="price">$26.02</div>
+            <div class="rating">★★★★★ (4.8) (8.4k+)</div>
+            <a class="buy-button" href="https://amzn.to/4llaZSD" target="_blank">
+              Buy on Amazon →
+            </a>
+          </div> 
+        </section>       
+
+
+        <!-- Product 3 -->
+        <section class="category">
+          <h2><a href="https://amzn.to/42mFZc2" target="_blank">Mueller French Press Coffee Maker 34oz</a></h2>
+          <div class="product">
+            <a href="https://amzn.to/42mFZc2" target="_blank">
+              <img src="https://m.media-amazon.com/images/I/81C27FRtZrL._AC_SL1500_.jpg" class="a-img" alt="Mueller French Press Coffee Maker 34oz" />
+            </a>
+            <h3>
+              <a href="https://amzn.to/42mFZc2" target="_blank">Mueller French Press Coffee Maker 34oz</a>
+            </h3>
+            <p>A durable and minimalist purely French metal option.</p>
+            <div class="price">$49.99</div>
+            <div class="rating">★★★★★ (4.7) (34.4k+)</div>
+            <a class="buy-button" href="https://amzn.to/42mFZc2" target="_blank">
+              Buy on Amazon →
+            </a>
+          </div>
+        </section>    
+
+        <!-- Product 4 -->
+        <section class="category">
+          <h2><a href="https://amzn.to/42mFZc2" target="_blank">Mueller French Press Coffee Maker 34oz</a></h2>
+          <div class="product">
+            <a href="https://amzn.to/42mFZc2" target="_blank">
+              <img src="https://m.media-amazon.com/images/I/81C27FRtZrL._AC_SL1500_.jpg" class="a-img" alt="Mueller French Press Coffee Maker 34oz" />
+            </a>
+            <h3>
+              <a href="https://amzn.to/42mFZc2" target="_blank">Mueller French Press Coffee Maker 34oz</a>
+            </h3>
+            <p>A durable and minimalist purely French metal option.</p>
+            <div class="price">$49.99</div>
+            <div class="rating">★★★★★ (4.7) (34.4k+)</div>
+            <a class="buy-button" href="https://amzn.to/42mFZc2" target="_blank">
+              Buy on Amazon →
+            </a>
+          </div>
+        </section>   
+
+        <!-- Product 3 -->
+        <section class="category">
+          <h2><a href="https://amzn.to/42mFZc2" target="_blank">Mueller French Press Coffee Maker 34oz</a></h2>
+          <div class="product">
+            <a href="https://amzn.to/42mFZc2" target="_blank">
+              <img src="https://m.media-amazon.com/images/I/81C27FRtZrL._AC_SL1500_.jpg" class="a-img" alt="Mueller French Press Coffee Maker 34oz" />
+            </a>
+            <h3>
+              <a href="https://amzn.to/42mFZc2" target="_blank">Mueller French Press Coffee Maker 34oz</a>
+            </h3>
+            <p>A durable and minimalist purely French metal option.</p>
+            <div class="price">$49.99</div>
+            <div class="rating">★★★★★ (4.7) (34.4k+)</div>
+            <a class="buy-button" href="https://amzn.to/42mFZc2" target="_blank">
+              Buy on Amazon →
+            </a>
+          </div>
+        </section>   
+
       </div>
     </section>
   </main>
