@@ -15,6 +15,9 @@ header {
   height: auto;
   margin: 0;
   width: 100vw;
+  /* box-shadow: 0 10px lightgray; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 header h1 {
@@ -73,7 +76,7 @@ main {
   padding: 2rem 1rem;
 }
 
-.category {
+/* .category {
   background: white;
   padding: 1.5rem;
   border-radius: 12px;
@@ -82,11 +85,7 @@ main {
   width: 100%;
   transition: transform 0.2s ease;
   margin: 0 2rem;
-}
-
-.category:hover {
-  transform: translateY(-4px);
-}
+} */
 
 .category h2 {
   margin-top: 0;
@@ -106,10 +105,6 @@ main {
   color: #00704a;
 }
 
-.category a:hover {
-  text-decoration: underline;
-}
-
 footer {
   text-align: center;
   padding: 1.5rem;
@@ -118,54 +113,9 @@ footer {
   background: #f1f1f1;
 }  
 
-/* coffee maker css */ 
-
-/* .product {
-  border: 1px solid #eee;
-  padding: 1rem;
-  border-radius: 10px;
-  /* margin-bottom: 2rem; */
-  /* background: #fff; */
-  /* box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-  max-width: 320px;
-} */ 
-
-.product img {
-  display: block;
-  max-width: 100%;
-  margin-bottom: 0.5rem;
-  border-radius: 6px;
-}
-
-.product h3 {
-  font-size: 1.1rem;
-  margin: 0.5rem 0;
-}
-
-.buy-button {
-  display: inline-block;
-  background-color: #ff9900;
-  color: #111;
-  padding: 0.4rem 0.8rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* home page grid */
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.25rem;
-  /* max-width: 1200px; */
-  margin: 0 auto;
-  /* min-width: 1100px; */
-}
 
 .price {
   font-weight: bold;
-  /* margin-bottom: 0.5rem; */
 }
 
 .rating {
@@ -174,18 +124,33 @@ footer {
   margin-bottom: 0.75rem;
 }
 
-.a-img {
-  height: 150px;
-  background-color: red;
-  margin: auto;
-} 
 
-/* .category-subtitle {
+
+
+
+
+
+
+
+
+
+/* Reset and base layout */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
   margin: 0;
-  color: red;
-} */
+  background-color: #f9f9f9;
+}
 
+/* Category section spacing */
+.category {
+  margin-bottom: 4rem;
+}
 
+/* Grid layout for product cards */
 .products-grid {
   display: flex;
   flex-wrap: wrap;
@@ -193,6 +158,7 @@ footer {
   justify-content: center;
 }
 
+/* Product card styling */
 .product {
   flex: 1 1 280px;
   max-width: 320px;
@@ -200,6 +166,55 @@ footer {
   padding: 1rem;
   border-radius: 10px;
   background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+} 
+
+.product:hover {
+  transform: translateY(-4px);
+} 
+
+/* Product image */
+.product img {
+  display: block;
+  max-width: 100%;
+  /* height: auto; */
+  height: 150px;
+  margin: auto auto .75rem auto;
+  /* margin-bottom: 0.75rem; */
+  border-radius: 6px;
 }
+
+/* Product name */
+.product h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  text-align: left;
+}
+
+/* Description */
+.product p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+/* Buy button */
+.buy-button {
+  display: inline-block;
+  background-color: #ff9900;
+  color: #111;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.buy-button:hover {
+  background-color: #e68a00;
+}
+
